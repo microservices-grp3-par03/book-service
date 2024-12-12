@@ -208,44 +208,4 @@
  *         description: Internal server error
  */
 
-/**
- * @swagger
- * /book/return/{id}:
- *   put:
- *     summary: Return a book
- *     description: Update the reservation status of a book and send a message to RabbitMQ.
- *     tags:
- *       - Books
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               bookId:
- *                 type: string
- *                 format: uuid
- *                 description: The UUID of the book being borrowed
- *               userId:
- *                 type: string
- *                 format: uuid
- *                 description: The UUID of the user borrowing the book
- *               borrowDate:
- *                 type: string
- *                 format: date-time
- *                 description: The date when the book is borrowed
- *               returnDate:
- *                 type: string
- *                 format: date-time
- *                 description: The expected return date of the book
- *     responses:
- *       '200':
- *         description: Book borrow status updated and message sent to RabbitMQ
- *       '400':
- *         description: Invalid input data
- *       '404':
- *         description: Book or User not found
- *       '500':
- *         description: Internal server error
- */
+
