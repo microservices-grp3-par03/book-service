@@ -75,7 +75,7 @@
 
 /**
  * @swagger
- * /book:
+ * /books:
  *   post:
  *     summary: Create a book
  *     description: Create a book and insert into book_db.
@@ -168,7 +168,7 @@
 
 /**
  * @swagger
- * /book/borrow/{id}:
+ * /books/borrow/{id}:
  *   post:
  *     summary: Borrow a book
  *     description: Update the reservation status of a book and send a message to RabbitMQ.
